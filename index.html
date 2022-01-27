@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            /* width: 100%; */
+           
+            
+        }
+        body{
+            /* display: flex; */
+            height: 100vh;
+            /* align-items: center;
+            justify-content: center; */
+            /* width: 100%; */
+           
+        }
+        .container{
+        
+              width: 100%;
+              height: 100%;
+            grid-template-columns: repeat(4,1fr) ;
+            grid-template-rows: 50px repeat(3,200px);
+            background-color: #3C3B3F;
+            display: grid;
+            /* align-content: center;
+            justify-content: center; */
+            /* grid-template-columns: repeat(4,1fr) ;
+            grid-template-rows: repeat(3,200px);
+            background-color: #3C3B3F; */
+            /* justify-content: center;
+            align-content: center; */
+
+        }
+        .item-1{
+          background: #ffdde1;
+          text-align: center;
+          justify-content: center;
+          align-content: center;
+          grid-column: 1/ -1;
+        }
+        .item-2{
+         background: #232526;
+         grid-area:2/1/4/2 ;
+        }
+        .item-3{
+         background: #727a17;
+         grid-area: 4/ 1/5/5;
+        }
+        .item-4{
+         background: #414d0b;
+        }
+        .item-5{
+         background: #F0C27B;
+         grid-area: 3/2/4/5;
+        }
+        .item-6{
+            background: #ee9ca7;
+        }
+        .item-7{
+            background: #d8ee9c;
+            
+        }
+       /* .item{
+           height: 200px;
+           width: 200px;
+       } */
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">Navbar Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde modi distinctio vitae recusandae molestias, ipsum facilis porro autem error aut consequatur, voluptatum velit ab obcaecati sapiente voluptate aperiam totam impedit!</div>
+        <div class="item item-2">Sidebar</div>
+        <div class="item item-3">mid</div>
+        <div class="item item-4">mid</div>
+        <div class="item item-6">mid</div>
+        <div class="item item-7">mid</div>
+        <div class="item item-5">mid</div>  
+      </div>
+    
+</body>
+</html>
